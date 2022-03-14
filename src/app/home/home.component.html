@@ -1,0 +1,38 @@
+
+  <div class="container">
+
+    <div class="boxone">
+    
+    <div id="search-box">
+      <input type="text" class="form-control"
+      id="Search" placeholder="Search here">
+      <button id="SearchEventButton" class="btn success">Search</button>
+       
+    </div>
+    </div>
+    
+    
+     <div class="boxtwo">
+     <div class="row">
+      <div *ngFor="let card  of cardList">
+        <div class="card col-md-3">
+          <img src="{{card.img}}" class="card-img-top" alt="...">
+          <div class="con">
+            <div class="d-flex flex-column">
+            <h2 class="card-title">{{card.title}}</h2>
+            <h3 class="card-text">{{card.address}}</h3>
+            <a class="btn success" href="#" role="button">Book</a>
+          </div>
+          </div>
+       </div>
+    </div>
+        </div>
+     </div>
+    </div>
+        
+     
+ 
+ 
+ 
+ 
+ 
